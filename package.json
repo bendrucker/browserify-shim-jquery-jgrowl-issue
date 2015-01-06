@@ -16,8 +16,8 @@
     "transform": [ "browserify-shim" ]
   },
   "browser": {
-    "jquery": "./vendor/jquery-1.11.0",
-    "jquery.jgrowl": "./vendor/jquery.jgrowl-1.2.13"
+    "jquery": "./vendor/jquery-1.11.0.js",
+    "jquery.jgrowl": "./vendor/jquery.jgrowl-1.2.13.js"
   },
   "browserify-shim": {
     "jquery": "jQuery",

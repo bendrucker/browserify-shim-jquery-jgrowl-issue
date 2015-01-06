@@ -1,0 +1,26 @@
+{
+  "name": "browserify-shim-jquery-jgrowl-issue",
+  "version": "1.0.0",
+  "description": "demo of an issue w/ browserify and jgrowl",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify index.js | grep 'jQuery JavaScript Library v1.11.0'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "browserify-shim": "^3.8.2"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  "browser": {
+    "jquery": "./vendor/jquery-1.11.0",
+    "jquery.jgrowl": "./vendor/jquery.jgrowl-1.2.13"
+  },
+  "browserify-shim": {
+    "jquery": "jQuery",
+    "jquery.jgrowl": { "depends": "jquery" }
+  }
+}
